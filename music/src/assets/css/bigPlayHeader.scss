@@ -1,0 +1,112 @@
+.bigPlayHeadet {
+    position: absolute;
+    z-index: 300;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    clear: both;
+    // background-color: pink;
+
+    &:after {
+        width: 0;
+        content: ".";
+        /*加一段内容*/
+        display: block;
+        /*让生成的元素以块级元素显示，占满剩余空间*/
+        height: 0;
+        /*避免生成的内容破坏原有布局高度*/
+        clear: both;
+        /*清除浮动*/
+        visibility: hidden;
+        /*让生成的内容不可见*/
+
+    }
+
+
+    .bigPlayicon {
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 5px;
+        overflow: hidden;
+
+        img {
+            width: 30px;
+            height: 30px;
+            transform: scale(1.4) translateX(5px);
+            vertical-align: middle
+        }
+
+    }
+
+    .tittle-box {
+        z-index: 200;
+        width: 150px;
+
+        // background-color: pink;
+
+        margin-left: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+
+        .titlemove {
+
+
+            p {
+                margin-left: 0;
+                display: block;
+                white-space: nowrap;
+
+                right: 0;
+                color: white;
+                font-size: 22px;
+                transition: move;
+               animation: 5s move infinite linear;
+
+
+            }
+
+            @keyframes move {
+                0% {
+                    margin-left: 150px;
+                }
+
+                100% {
+                    margin-left: -111px;
+                }
+            }
+
+        }
+
+        .wenzi {
+            height: 15px;
+            // display: flex;
+            // background-color: blue;
+            color: hsla(0, 0%, 100%, .6);
+
+
+            white-space: nowrap;
+   
+            span {
+               float: left;
+                display: block;
+                color: hsla(0, 0%, 100%, .6);
+                white-space: nowrap;
+                /*超出部分隐藏*/
+                overflow: hidden;
+                /* 超出部分显示省略号 */
+
+                text-overflow: ellipsis;
+
+
+
+
+            }
+        }
+
+
+
+    }
+}

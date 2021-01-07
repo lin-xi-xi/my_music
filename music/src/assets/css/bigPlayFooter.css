@@ -1,0 +1,205 @@
+.bigPlayFooter {
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6.2rem;
+  z-index: 505;
+  text-align: center;
+}
+
+.bigPlayFooter .controls_list_play_list {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  width: 100vh;
+  height: 450px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(145, 145, 147, 0.3);
+  z-index: 9999;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box {
+  padding: 0 15px;
+  margin: 0 15px;
+  width: 100vw;
+  margin: 0 auto;
+  overflow: scroll;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner {
+  height: 70vh;
+  position: relative;
+  bottom: 10px;
+  background-color: white;
+  border-radius: 0 0 19px 19px;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner h3 {
+  top: 145px;
+  height: 40px;
+  display: block;
+  width: 92vw;
+  padding-left: 15px;
+  background-color: white;
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  display: flex;
+  position: fixed;
+  border-radius: 19px 19px 0px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner h3 p {
+  color: #a09b9b;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper {
+  overflow: scroll;
+  margin-top: 2px;
+  height: 70vh;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  overflow: scroll;
+  justify-content: space-around;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li {
+  position: relative;
+  padding-left: 15px;
+  height: 45px;
+  text-align: left;
+  white-space: nowrap;
+  font-size: 16px;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li:hover {
+  background-color: rgba(220, 218, 218, 0.768);
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li .shengying_ico {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li .shengying_ico img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li p {
+  width: 70%;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bigPlayFooter .controls_list_play_list .play_list_box .play_list_box_inner .swiper ul li .cuo {
+  position: absolute;
+  right: 15px;
+  font-weight: normal;
+  margin-left: 60px;
+  font-size: 30px;
+  color: rgba(177, 173, 173, 0.7);
+}
+
+.bigPlayFooter .progress {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.bigPlayFooter .progress .progress_left {
+  color: rgba(218, 211, 211, 0.7);
+  font-size: 12px;
+  width: 10%;
+  text-align: right;
+}
+
+.bigPlayFooter .progress .progress_right {
+  color: rgba(213, 209, 209, 0.319);
+  font-size: 12px;
+  width: 10%;
+  text-align: left;
+}
+
+.bigPlayFooter .progress .progress_center {
+  z-index: 99;
+  width: 70%;
+  height: 3px;
+  background: rgba(213, 209, 209, 0.319);
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.bigPlayFooter .progress .progress_center input {
+  width: 100%;
+  position: absolute;
+  top: -7px;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+}
+
+.bigPlayFooter .progress .progress_center span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: rgba(240, 237, 237, 0.585);
+  border-radius: 3px;
+}
+
+.bigPlayFooter .progress .progress_center i {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -2.5px;
+}
+
+.bigPlayFooter .controls {
+  margin-top: 18px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.bigPlayFooter .controls img {
+  width: 22px;
+  height: 22px;
+}
+
+.bigPlayFooter .controls div {
+  margin: 0 18px;
+}
+
+.bigPlayFooter .controls .controls_pause_play .controls_pause img {
+  width: 40px;
+  height: 40px;
+}

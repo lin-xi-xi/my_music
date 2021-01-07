@@ -1,0 +1,78 @@
+.PlayFullLyric {
+    position: relative;
+    z-index: 200;
+    width: 100vw;
+    height: 74vh;
+    top: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    clear: both;
+    // background: red;
+    // opacity: 0.5; 
+    color: rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 100vw;
+        height: 100px;
+        position: absolute;
+
+
+        // background-color: rgba(231, 229, 229, 0.2);
+
+
+
+    }
+
+    .Lyric_box_ul {
+        text-align: center;
+        margin: 175px auto;
+        font-size: 20px;
+        width: 80vw;
+
+        li {
+            // display: flex;
+            justify-content: baseline;
+            align-items: center;
+            span {
+                // background-color: red;
+                text-align: center;
+                display: block;
+                width: 80vw;
+                margin: 10px 0;
+                height: 38px;
+                padding: 0 10px;
+              
+                
+               
+                font-size: 19px;
+                white-space: nowrap;
+                word-break: normal;
+                font-weight: normal;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+
+          
+            position: relative;
+            // height: 26.4;
+
+            p {
+                // background-color: blueviolet;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: -37px;
+                color: grey;
+                color: 8px;
+                display: none;
+            }
+        }
+
+
+    }
+}
