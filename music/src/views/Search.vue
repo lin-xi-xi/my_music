@@ -48,8 +48,9 @@ export default {
   },
   methods: {
     searchDate: function (e) {
-      console.log(e);
+      
       this.date = e;
+      console.log('开始打印，改变哈哈')
     },
     oninput: function (e) {
       console.log("e", e);

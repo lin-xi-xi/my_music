@@ -41,12 +41,13 @@ export default {
           this.songitem = response.data.playlist.trackIds.splice(0, 20);
           this.songitem.forEach((element) => {
             this.arr.push(element.id);
+          onsole.log(this.arr)
           });
           this.songitem = this.arr.join(",");
           this.axios
             .get(`http://music.kele8.cn/song/detail?ids=${this.songitem}`)
             .then((response) => {
-              console.log(response.data.songs);
+              console.log('ss')
               this.songitem = response.data.songs;
             });
         });
